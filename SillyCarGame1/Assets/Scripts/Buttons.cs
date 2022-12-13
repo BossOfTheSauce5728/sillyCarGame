@@ -34,6 +34,6 @@ public class Buttons : MonoBehaviour
 
     void SnaringSUVS()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("CopTutorial");
     }
 }

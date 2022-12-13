@@ -20,6 +20,16 @@ public class SceneManager1 : MonoBehaviour
     public void StartGame()
     {
 
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("ShootGame");
+    }
+
+    public void StartPlane()
+    {
+        SceneManager.LoadScene("FlyingMini");
+    }
+
+    public void StartParking()
+    {
+        SceneManager.LoadScene("ParkingGame");
     }
 }

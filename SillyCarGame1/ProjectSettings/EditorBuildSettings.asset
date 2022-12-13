@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 141d68ee41c73e342a219e14311f7256
   - enabled: 1
+    path: Assets/Scenes/FlyingTutorial.unity
+    guid: 437173a470b3c5c44b82ab8c25eec60b
+  - enabled: 1
     path: Assets/Scenes/FlyingMini.unity
     guid: b82d923973195174c9480afd7183f8aa
   - enabled: 1

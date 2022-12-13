@@ -17,22 +17,22 @@ public class Buttons : MonoBehaviour
         
     }
 
-    void CannonCars()
+    public void CannonCars()
     {
         SceneManager.LoadScene("CannonTutorial");
     }
 
-    void SoaringSedans()
+    public void SoaringSedans()
     {
-        SceneManager.LoadScene("FlyingMini");
+        SceneManager.LoadScene("FlyingTutorial");
     }
 
-    void PerilousParking()
+    public void PerilousParking()
     {
         SceneManager.LoadScene("");
     }
 
-    void SnaringSUVS()
+    public void SnaringSUVS()
     {
         SceneManager.LoadScene("CopTutorial");
     }

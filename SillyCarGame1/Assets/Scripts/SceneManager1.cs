@@ -27,4 +27,9 @@ public class SceneManager1 : MonoBehaviour
     {
         SceneManager.LoadScene("FlyingMini");
     }
+
+    public void StartParking()
+    {
+        SceneManager.LoadScene("ParkingGame");
+    }
 }

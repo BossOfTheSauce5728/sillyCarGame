@@ -61,7 +61,7 @@ public class PlayerControllerX : MonoBehaviour
 
     private void GameOver()
     {
-        SceneManager.LoadScene("Plane");
+        SceneManager.LoadScene("PlaneCrash");
     }
 
     // Update is called once per frame

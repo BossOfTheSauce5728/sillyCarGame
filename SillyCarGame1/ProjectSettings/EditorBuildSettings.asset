@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lose.unity
     guid: dc0361905f0cb424f95a7eda718ea1a0
+  - enabled: 1
+    path: Assets/Scenes/CopTutorial.unity
+    guid: cc9a2eac5ec5c1147ba513f6eb769440
+  - enabled: 1
+    path: Assets/Scenes/CrazyTaxi.unity
+    guid: 4ff11b83fd5f1814faa4ca79f96da9d8
   m_configObjects: {}

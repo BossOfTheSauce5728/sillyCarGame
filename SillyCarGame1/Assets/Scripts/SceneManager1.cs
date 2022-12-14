@@ -32,4 +32,14 @@ public class SceneManager1 : MonoBehaviour
     {
         SceneManager.LoadScene("ParkingGame");
     }
+
+    public void returnToMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public void Cops()
+    {
+        SceneManager.LoadScene("CrazyTaxi");
+    }
 }

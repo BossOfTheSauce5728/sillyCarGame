@@ -5,9 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Mario
+<<<<<<< HEAD
   - Projectile
   - Projectile2
   - Car
+=======
+  - PickUp
+>>>>>>> faacc0c393e5a726137bae6f889eb24d670869c8
   layers:
   - Default
   - TransparentFX

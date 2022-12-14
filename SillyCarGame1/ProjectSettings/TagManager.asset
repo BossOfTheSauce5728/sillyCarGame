@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Mario
+  - Projectile
+  - Projectile2
+  - Car
   layers:
   - Default
   - TransparentFX

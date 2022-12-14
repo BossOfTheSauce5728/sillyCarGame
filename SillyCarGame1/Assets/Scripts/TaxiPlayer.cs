@@ -6,12 +6,12 @@ public class TaxiPlayer : MonoBehaviour
 {
     private float horizontalInput;
     private float verticalInput;
-    private Rigidbody playerRb;
     [SerializeField] float speed;
+    public float score;
 
     void Start()
     {
-        playerRb = GetComponent<Rigidbody>();
+        score = 0;
     }
 
     // Update is called once per frame
@@ -22,5 +22,14 @@ public class TaxiPlayer : MonoBehaviour
 
         transform.Translate(Vector3.right * Time.deltaTime * speed * verticalInput);
         transform.Rotate(Vector3.up, 55 * horizontalInput * Time.deltaTime);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == ("PickUp"))
+        {
+            score = score + 1;
+            Destroy(collision.gameObject);
+        }
     }
 }

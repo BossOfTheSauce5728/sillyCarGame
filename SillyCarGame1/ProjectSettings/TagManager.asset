@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Mario
   - PickUp
+  - Car
   layers:
   - Default
   - TransparentFX

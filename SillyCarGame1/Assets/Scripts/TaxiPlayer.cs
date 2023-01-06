@@ -8,9 +8,10 @@ public class TaxiPlayer : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     private float score = 0;
-    private float time = 120f;
+    private float time = 60f;
     private float displayTime;
     [SerializeField] float speed;
+    [SerializeField] float turnSpeed;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] TextMeshProUGUI timeText;
 
@@ -25,7 +26,7 @@ public class TaxiPlayer : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.right * Time.deltaTime * speed * -verticalInput);
-        transform.Rotate(Vector3.up, 55 * horizontalInput * Time.deltaTime);
+        transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
 
         scoreText.text = "Score: " + score;
         Timer();

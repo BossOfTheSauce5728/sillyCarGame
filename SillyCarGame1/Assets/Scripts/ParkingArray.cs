@@ -5,6 +5,7 @@ using UnityEngine;
 public class ParkingArray : MonoBehaviour
 {
     public List<GameObject> Spots;
+    public GameObject CurrentSpot;
 
     // Start is called before the first frame update
     void Start()
@@ -16,5 +17,10 @@ public class ParkingArray : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void CallSpot()
+    {
+        CurrentSpot = Spots[Random.Range(0, Spots.Count)];
     }
 }

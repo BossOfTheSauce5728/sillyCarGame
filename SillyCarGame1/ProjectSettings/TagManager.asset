@@ -6,6 +6,10 @@ TagManager:
   tags:
   - PickUp
   - Ground
+  - Projectile
+  - Boundary
+  - Projectile2
+  - Mario
   layers:
   - Default
   - TransparentFX

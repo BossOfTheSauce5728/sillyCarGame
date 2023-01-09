@@ -10,7 +10,8 @@ public class TaxiPlayer : MonoBehaviour
     private float score = 0;
     private float time = 60f;
     private float displayTime;
-    private float wheelsOnGround;
+    public float wheelsOnGround;
+    private Vector3 resetRot;
     [SerializeField] float speed;
     [SerializeField] float turnSpeed;
     [SerializeField] List<GameObject> wheels;
@@ -19,9 +20,11 @@ public class TaxiPlayer : MonoBehaviour
     public bool isGameOver;
     public bool isOnGround;
 
+
     void Start()
     {
         isGameOver = false;
+        resetRot = new Vector3(0, gameObject.transform.eulerAngles.y, 0);
     }
 
     // Update is called once per frame
@@ -90,13 +93,18 @@ public class TaxiPlayer : MonoBehaviour
     private void IsGrounded()
     {
         
-        if(wheelsOnGround/4 >= 1)
+        if(wheelsOnGround > 4)
         {
             isOnGround = true;
         }
-        else if(wheelsOnGround/4 == 0)
+        else if(wheelsOnGround <= 4)
         {
             isOnGround = false;
+            Debug.Log("Reset Car with Space");
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                gameObject.transform.eulerAngles = resetRot;
+            }
         }
     }
 }

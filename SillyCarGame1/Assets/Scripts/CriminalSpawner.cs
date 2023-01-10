@@ -19,7 +19,7 @@ public class CriminalSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        crimSpawn = new Vector3(Random.Range(-104, 97), 5.1f, Random.Range(-115, -10));
+        crimSpawn = new Vector3(Random.Range(-104, 96), 5.1f, Random.Range(-115, -10));
         IsSpawned();
         SpawnCrim();
         crimInGame = GameObject.FindGameObjectWithTag("PickUp");

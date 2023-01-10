@@ -12,13 +12,17 @@ public class TaxiPlayer : MonoBehaviour
     private float displayTime;
     public float wheelsOnGround;
     private Vector3 resetRot;
+    [SerializeField] GameObject gameOver;
+    [SerializeField] GameObject gameOn;
     [SerializeField] float speed;
     [SerializeField] float turnSpeed;
     [SerializeField] List<GameObject> wheels;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] TextMeshProUGUI timeText;
+    [SerializeField] TextMeshProUGUI finalScoreText;
     public bool isGameOver;
     public bool isOnGround;
+
 
 
     void Start()
@@ -78,7 +82,7 @@ public class TaxiPlayer : MonoBehaviour
             displayTime = Mathf.Round(time);
             timeText.text = "Time: " + displayTime;
         }
-        else if(time == 0)
+        else if(displayTime == 0)
         {
             GameOver();
         }
@@ -87,6 +91,9 @@ public class TaxiPlayer : MonoBehaviour
     private void GameOver()
     {
         isGameOver = true;
+        gameOn.SetActive(false);
+        gameOver.SetActive(true);
+        finalScoreText.text = "Final Score: " + score;
         Debug.Log("Game Over");
     }
 

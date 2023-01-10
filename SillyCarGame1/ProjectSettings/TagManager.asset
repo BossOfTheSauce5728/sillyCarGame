@@ -5,16 +5,19 @@ TagManager:
   serializedVersion: 2
   tags:
   - PickUp
-  - Car
+  - Ground
   - Projectile
+  - Boundary
+  - Projectile2
+  - Mario
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Target
+  - 
   - Water
   - UI
-  - Player
+  - 
   - 
   - 
   - 

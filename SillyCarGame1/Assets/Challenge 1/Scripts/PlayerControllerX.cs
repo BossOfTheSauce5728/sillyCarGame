@@ -87,4 +87,6 @@ public class PlayerControllerX : MonoBehaviour
             speed2 = speed2 * -1;
         }
     }
+
+    
 }

@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 10413369}
   - component: {fileID: 10413368}
   - component: {fileID: 10413367}
+  - component: {fileID: 10413370}
+  - component: {fileID: 10413371}
   m_Layer: 0
   m_Name: ParkingSpot (7)
   m_TagString: Untagged
@@ -218,6 +220,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10413365}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &10413370
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10413365}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &10413371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10413365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &57586558
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +261,8 @@ GameObject:
   - component: {fileID: 57586562}
   - component: {fileID: 57586561}
   - component: {fileID: 57586560}
+  - component: {fileID: 57586563}
+  - component: {fileID: 57586564}
   m_Layer: 0
   m_Name: ParkingSpot (5)
   m_TagString: Untagged
@@ -313,6 +346,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 57586558}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &57586563
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57586558}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &57586564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57586558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1001 &117628130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -426,6 +488,8 @@ GameObject:
   - component: {fileID: 184219533}
   - component: {fileID: 184219532}
   - component: {fileID: 184219531}
+  - component: {fileID: 184219534}
+  - component: {fileID: 184219535}
   m_Layer: 0
   m_Name: ParkingSpot (15)
   m_TagString: Untagged
@@ -509,6 +573,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184219529}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &184219534
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184219529}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &184219535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184219529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1001 &191214486
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -753,6 +846,8 @@ GameObject:
   - component: {fileID: 228565120}
   - component: {fileID: 228565119}
   - component: {fileID: 228565118}
+  - component: {fileID: 228565122}
+  - component: {fileID: 228565123}
   m_Layer: 0
   m_Name: ParkingSpot (29)
   m_TagString: Untagged
@@ -836,6 +931,35 @@ Transform:
   m_Father: {fileID: 279658185}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &228565122
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228565117}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &228565123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228565117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &273352288
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,6 +1070,8 @@ GameObject:
   - component: {fileID: 277982328}
   - component: {fileID: 277982327}
   - component: {fileID: 277982326}
+  - component: {fileID: 277982329}
+  - component: {fileID: 277982330}
   m_Layer: 0
   m_Name: ParkingSpot (12)
   m_TagString: Untagged
@@ -1029,6 +1155,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277982324}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &277982329
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277982324}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &277982330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277982324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &279658184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,6 +1356,8 @@ GameObject:
   - component: {fileID: 314017497}
   - component: {fileID: 314017496}
   - component: {fileID: 314017495}
+  - component: {fileID: 314017498}
+  - component: {fileID: 314017499}
   m_Layer: 0
   m_Name: ParkingSpot (11)
   m_TagString: Untagged
@@ -1284,6 +1441,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314017493}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &314017498
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314017493}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &314017499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314017493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &399060173
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,6 +1482,8 @@ GameObject:
   - component: {fileID: 399060177}
   - component: {fileID: 399060176}
   - component: {fileID: 399060175}
+  - component: {fileID: 399060178}
+  - component: {fileID: 399060179}
   m_Layer: 0
   m_Name: ParkingSpot (14)
   m_TagString: Untagged
@@ -1379,6 +1567,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399060173}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &399060178
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399060173}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &399060179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399060173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &407840116
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,6 +1608,8 @@ GameObject:
   - component: {fileID: 407840120}
   - component: {fileID: 407840119}
   - component: {fileID: 407840118}
+  - component: {fileID: 407840121}
+  - component: {fileID: 407840122}
   m_Layer: 0
   m_Name: ParkingSpot (28)
   m_TagString: Untagged
@@ -1474,6 +1693,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407840116}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &407840121
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407840116}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &407840122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407840116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &427455462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,6 +1734,8 @@ GameObject:
   - component: {fileID: 427455466}
   - component: {fileID: 427455465}
   - component: {fileID: 427455464}
+  - component: {fileID: 427455467}
+  - component: {fileID: 427455468}
   m_Layer: 0
   m_Name: ParkingSpot (21)
   m_TagString: Untagged
@@ -1569,6 +1819,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427455462}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &427455467
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427455462}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &427455468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427455462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &580118718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1860,8 @@ GameObject:
   - component: {fileID: 580118722}
   - component: {fileID: 580118721}
   - component: {fileID: 580118720}
+  - component: {fileID: 580118723}
+  - component: {fileID: 580118724}
   m_Layer: 0
   m_Name: ParkingSpot (6)
   m_TagString: Untagged
@@ -1664,6 +1945,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580118718}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &580118723
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580118718}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &580118724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580118718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &616274832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,6 +2309,8 @@ GameObject:
   - component: {fileID: 735899383}
   - component: {fileID: 735899382}
   - component: {fileID: 735899381}
+  - component: {fileID: 735899384}
+  - component: {fileID: 735899385}
   m_Layer: 0
   m_Name: ParkingSpot (13)
   m_TagString: Untagged
@@ -2082,6 +2394,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735899379}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &735899384
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735899379}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &735899385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735899379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &824362657
 GameObject:
   m_ObjectHideFlags: 0
@@ -2094,6 +2435,8 @@ GameObject:
   - component: {fileID: 824362661}
   - component: {fileID: 824362660}
   - component: {fileID: 824362659}
+  - component: {fileID: 824362662}
+  - component: {fileID: 824362663}
   m_Layer: 0
   m_Name: ParkingSpot (9)
   m_TagString: Untagged
@@ -2177,6 +2520,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824362657}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &824362662
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824362657}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &824362663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824362657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1001 &829229685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2421,6 +2793,8 @@ GameObject:
   - component: {fileID: 844106174}
   - component: {fileID: 844106173}
   - component: {fileID: 844106172}
+  - component: {fileID: 844106175}
+  - component: {fileID: 844106176}
   m_Layer: 0
   m_Name: ParkingSpot (25)
   m_TagString: Untagged
@@ -2504,6 +2878,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 844106170}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &844106175
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844106170}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &844106176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844106170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &858637613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2516,6 +2919,8 @@ GameObject:
   - component: {fileID: 858637617}
   - component: {fileID: 858637616}
   - component: {fileID: 858637615}
+  - component: {fileID: 858637618}
+  - component: {fileID: 858637619}
   m_Layer: 0
   m_Name: ParkingSpot (1)
   m_TagString: Untagged
@@ -2599,6 +3004,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858637613}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &858637618
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858637613}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &858637619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858637613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1001 &926438272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2612,23 +3046,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 073447e15be6ecc4ab450c6648929467, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 073447e15be6ecc4ab450c6648929467, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 073447e15be6ecc4ab450c6648929467, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 073447e15be6ecc4ab450c6648929467, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 073447e15be6ecc4ab450c6648929467, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 073447e15be6ecc4ab450c6648929467, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 073447e15be6ecc4ab450c6648929467, type: 3}
       propertyPath: m_RootOrder
@@ -2714,8 +3152,19 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6d2772f3b3b6e97469d2b0a9b385ff1d, type: 2}
-    m_RemovedComponents:
-    - {fileID: 6400000, guid: 073447e15be6ecc4ab450c6648929467, type: 3}
+    - target: {fileID: 6400000, guid: 073447e15be6ecc4ab450c6648929467, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400000, guid: 073447e15be6ecc4ab450c6648929467, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6400000, guid: 073447e15be6ecc4ab450c6648929467, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 073447e15be6ecc4ab450c6648929467, type: 3}
 --- !u!1 &926438273 stripped
 GameObject:
@@ -2831,22 +3280,102 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.045498963, y: 0.01358262, z: 0.021373877}
   m_Center: {x: -0.000103079736, y: 0.0009655473, z: 4.656614e-10}
---- !u!114 &926438277
-MonoBehaviour:
+--- !u!82 &926438277
+AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926438273}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c79f6e409986d48429dae64c89b66e78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
-  turnSpeed: 60
-  scoreText: {fileID: 706052289}
-  timeText: {fileID: 2074758803}
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!54 &926438280
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2859,10 +3388,35 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
+  m_Constraints: 80
+  m_CollisionDetection: 3
+--- !u!114 &926438281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926438273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c545d040b930a6145b36b2be214114d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 30
+  turnSpeed: 50
+  horizontalInput: 0
+  forwardInput: 0
+  explosionParticle: {fileID: 7535607469619513247, guid: ac10190cf200c4f7e881ca8e41d3d760, type: 3}
+  explosionParticle2: {fileID: 9125212449759046732, guid: a2b5851083677584bab17b020fcc571d, type: 3}
+  dirtParticle: {fileID: 1438565936, guid: abc6ed9bd51fa344cb1d1a91c11d6c26, type: 3}
+  Health: 3
+  death: {fileID: 8300000, guid: aed0ff69dcf779a498500a2156cd77eb, type: 3}
+  Hurt: {fileID: 8300000, guid: aed0ff69dcf779a498500a2156cd77eb, type: 3}
+  audioSource: {fileID: 926438277}
+  isdead: 0
+  HealthText: {fileID: 2074758803}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3121,6 +3675,8 @@ GameObject:
   - component: {fileID: 1001559417}
   - component: {fileID: 1001559416}
   - component: {fileID: 1001559415}
+  - component: {fileID: 1001559418}
+  - component: {fileID: 1001559419}
   m_Layer: 0
   m_Name: ParkingSpot (3)
   m_TagString: Untagged
@@ -3204,6 +3760,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001559413}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1001559418
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001559413}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &1001559419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001559413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &1009695979
 GameObject:
   m_ObjectHideFlags: 0
@@ -3216,6 +3801,8 @@ GameObject:
   - component: {fileID: 1009695983}
   - component: {fileID: 1009695982}
   - component: {fileID: 1009695981}
+  - component: {fileID: 1009695984}
+  - component: {fileID: 1009695985}
   m_Layer: 0
   m_Name: ParkingSpot (20)
   m_TagString: Untagged
@@ -3299,6 +3886,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009695979}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1009695984
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009695979}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &1009695985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009695979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &1031115303
 GameObject:
   m_ObjectHideFlags: 0
@@ -3311,6 +3927,8 @@ GameObject:
   - component: {fileID: 1031115307}
   - component: {fileID: 1031115306}
   - component: {fileID: 1031115305}
+  - component: {fileID: 1031115308}
+  - component: {fileID: 1031115309}
   m_Layer: 0
   m_Name: ParkingSpot (26)
   m_TagString: Untagged
@@ -3394,6 +4012,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031115303}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1031115308
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031115303}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &1031115309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031115303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &1060300050
 GameObject:
   m_ObjectHideFlags: 0
@@ -3406,6 +4053,8 @@ GameObject:
   - component: {fileID: 1060300054}
   - component: {fileID: 1060300053}
   - component: {fileID: 1060300052}
+  - component: {fileID: 1060300055}
+  - component: {fileID: 1060300056}
   m_Layer: 0
   m_Name: ParkingSpot (16)
   m_TagString: Untagged
@@ -3489,6 +4138,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060300050}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1060300055
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060300050}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &1060300056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060300050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1001 &1077716027
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3733,6 +4411,8 @@ GameObject:
   - component: {fileID: 1084090515}
   - component: {fileID: 1084090514}
   - component: {fileID: 1084090513}
+  - component: {fileID: 1084090516}
+  - component: {fileID: 1084090517}
   m_Layer: 0
   m_Name: ParkingSpot (18)
   m_TagString: Untagged
@@ -3816,6 +4496,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084090511}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1084090516
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084090511}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &1084090517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084090511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &1132832337
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,6 +4537,8 @@ GameObject:
   - component: {fileID: 1132832341}
   - component: {fileID: 1132832340}
   - component: {fileID: 1132832339}
+  - component: {fileID: 1132832342}
+  - component: {fileID: 1132832343}
   m_Layer: 0
   m_Name: ParkingSpot (10)
   m_TagString: Untagged
@@ -3911,6 +4622,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132832337}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1132832342
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132832337}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &1132832343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132832337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &1269132886
 GameObject:
   m_ObjectHideFlags: 0
@@ -3923,6 +4663,8 @@ GameObject:
   - component: {fileID: 1269132890}
   - component: {fileID: 1269132889}
   - component: {fileID: 1269132888}
+  - component: {fileID: 1269132891}
+  - component: {fileID: 1269132892}
   m_Layer: 0
   m_Name: ParkingSpot (4)
   m_TagString: Untagged
@@ -4006,6 +4748,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269132886}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1269132891
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269132886}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &1269132892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269132886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &1392695510
 GameObject:
   m_ObjectHideFlags: 0
@@ -4018,6 +4789,8 @@ GameObject:
   - component: {fileID: 1392695514}
   - component: {fileID: 1392695513}
   - component: {fileID: 1392695512}
+  - component: {fileID: 1392695515}
+  - component: {fileID: 1392695516}
   m_Layer: 0
   m_Name: ParkingSpot (8)
   m_TagString: Untagged
@@ -4101,6 +4874,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392695510}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1392695515
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392695510}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &1392695516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392695510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &1441200534
 GameObject:
   m_ObjectHideFlags: 0
@@ -4113,6 +4915,8 @@ GameObject:
   - component: {fileID: 1441200538}
   - component: {fileID: 1441200537}
   - component: {fileID: 1441200536}
+  - component: {fileID: 1441200539}
+  - component: {fileID: 1441200540}
   m_Layer: 0
   m_Name: ParkingSpot (22)
   m_TagString: Untagged
@@ -4196,6 +5000,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1441200534}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1441200539
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441200534}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &1441200540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441200534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &1446296304
 GameObject:
   m_ObjectHideFlags: 0
@@ -4381,6 +5214,8 @@ GameObject:
   - component: {fileID: 1480181193}
   - component: {fileID: 1480181192}
   - component: {fileID: 1480181191}
+  - component: {fileID: 1480181194}
+  - component: {fileID: 1480181195}
   m_Layer: 0
   m_Name: ParkingSpot (2)
   m_TagString: Untagged
@@ -4464,6 +5299,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480181189}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1480181194
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480181189}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &1480181195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480181189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1001 &1552286525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4577,6 +5441,8 @@ GameObject:
   - component: {fileID: 1639193981}
   - component: {fileID: 1639193980}
   - component: {fileID: 1639193979}
+  - component: {fileID: 1639193982}
+  - component: {fileID: 1639193983}
   m_Layer: 0
   m_Name: ParkingSpot (19)
   m_TagString: Untagged
@@ -4660,6 +5526,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639193977}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1639193982
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639193977}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &1639193983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639193977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &1706676410
 GameObject:
   m_ObjectHideFlags: 0
@@ -4672,6 +5567,8 @@ GameObject:
   - component: {fileID: 1706676414}
   - component: {fileID: 1706676413}
   - component: {fileID: 1706676412}
+  - component: {fileID: 1706676415}
+  - component: {fileID: 1706676416}
   m_Layer: 0
   m_Name: ParkingSpot (27)
   m_TagString: Untagged
@@ -4755,6 +5652,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1706676410}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1706676415
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706676410}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &1706676416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1706676410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &1765800892
 GameObject:
   m_ObjectHideFlags: 0
@@ -4797,6 +5723,8 @@ GameObject:
   - component: {fileID: 1857132177}
   - component: {fileID: 1857132176}
   - component: {fileID: 1857132175}
+  - component: {fileID: 1857132178}
+  - component: {fileID: 1857132179}
   m_Layer: 0
   m_Name: ParkingSpot (23)
   m_TagString: Untagged
@@ -4880,6 +5808,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857132173}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1857132178
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857132173}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &1857132179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857132173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1001 &1888799428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5088,6 +6045,8 @@ GameObject:
   - component: {fileID: 2006668429}
   - component: {fileID: 2006668428}
   - component: {fileID: 2006668427}
+  - component: {fileID: 2006668430}
+  - component: {fileID: 2006668431}
   m_Layer: 0
   m_Name: ParkingSpot (17)
   m_TagString: Untagged
@@ -5171,6 +6130,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006668425}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &2006668430
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006668425}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &2006668431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006668425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}
 --- !u!1 &2074758801
 GameObject:
   m_ObjectHideFlags: 0
@@ -5317,6 +6305,9 @@ GameObject:
   - component: {fileID: 2085115582}
   - component: {fileID: 2085115581}
   - component: {fileID: 2085115580}
+  - component: {fileID: 2085115583}
+  - component: {fileID: 2085115585}
+  - component: {fileID: 2085115584}
   m_Layer: 0
   m_Name: ParkingSpot (24)
   m_TagString: Untagged
@@ -5400,3 +6391,45 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085115578}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &2085115583
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085115578}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &2085115584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085115578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 0}
+--- !u!114 &2085115585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085115578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4591f4c25c41834880093a090f1fb55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parkingArray: {fileID: 1446296305}

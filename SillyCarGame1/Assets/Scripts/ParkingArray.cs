@@ -30,7 +30,7 @@ public class ParkingArray : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+   public void Park(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
@@ -38,8 +38,6 @@ public class ParkingArray : MonoBehaviour
             StartCoroutine(Reset());
 
         }
-
-
     }
 
 

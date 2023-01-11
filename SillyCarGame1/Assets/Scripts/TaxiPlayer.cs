@@ -10,26 +10,41 @@ public class TaxiPlayer : MonoBehaviour
     private float score = 0;
     private float time = 60f;
     private float displayTime;
+    public float wheelsOnGround;
+    private Vector3 resetRot;
+    [SerializeField] GameObject gameOver;
+    [SerializeField] GameObject gameOn;
     [SerializeField] float speed;
     [SerializeField] float turnSpeed;
+    [SerializeField] List<GameObject> wheels;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] TextMeshProUGUI timeText;
+    [SerializeField] TextMeshProUGUI finalScoreText;
+    public bool isGameOver;
+    public bool isOnGround;
+
+
 
     void Start()
     {
-
+        isGameOver = false;
+        resetRot = new Vector3(0, gameObject.transform.eulerAngles.y, 0);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
-        verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.right * Time.deltaTime * speed * -verticalInput);
-        transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
+        IsGrounded();
+        if(isGameOver == false && isOnGround)
+        {
+            horizontalInput = Input.GetAxis("Horizontal");
+            verticalInput = Input.GetAxis("Vertical");
+            transform.Translate(Vector3.right * Time.deltaTime * speed * -verticalInput);
+            transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
 
-        scoreText.text = "Score: " + score;
-        Timer();
+            scoreText.text = "Score: " + score;
+            Timer();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -38,6 +53,29 @@ public class TaxiPlayer : MonoBehaviour
         {
             score = score + 1;
             Destroy(collision.gameObject);
+        }
+        if(collision.gameObject.tag == ("Watch"))
+        {
+            time += 10;
+            Destroy(collision.gameObject);
+        }
+        foreach(GameObject wheel in wheels)
+        {
+            if(collision.gameObject.tag == ("Ground"))
+            {
+                wheelsOnGround = wheelsOnGround + 1;
+            }
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        foreach (GameObject wheel in wheels)
+        {
+            if (collision.gameObject.tag == ("Ground"))
+            {
+                wheelsOnGround = wheelsOnGround - 1;
+            }
         }
     }
 
@@ -49,7 +87,7 @@ public class TaxiPlayer : MonoBehaviour
             displayTime = Mathf.Round(time);
             timeText.text = "Time: " + displayTime;
         }
-        else if(time == 0)
+        else if(displayTime == 0)
         {
             GameOver();
         }
@@ -57,6 +95,27 @@ public class TaxiPlayer : MonoBehaviour
 
     private void GameOver()
     {
+        isGameOver = true;
+        gameOn.SetActive(false);
+        gameOver.SetActive(true);
+        finalScoreText.text = "Final Score: " + score;
+        Debug.Log("Game Over");
+    }
 
+    private void IsGrounded()
+    {
+        
+        if(wheelsOnGround > 4)
+        {
+            isOnGround = true;
+        }
+        else if(wheelsOnGround <= 4)
+        {
+            isOnGround = false;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                gameObject.transform.eulerAngles = resetRot;
+            }
+        }
     }
 }

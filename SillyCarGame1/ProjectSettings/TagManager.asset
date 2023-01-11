@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PickUp
+  - Ground
+  - Projectile
+  - Boundary
+  - Projectile2
+  - Mario
+  - Watch
   layers:
   - Default
   - TransparentFX

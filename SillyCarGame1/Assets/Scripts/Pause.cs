@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class Pause : MonoBehaviour
 {
     public GameObject pauseMenu;
-    public bool menuActive;
+    public Move move;
+    public bool menuActive = false;
 
     public void Menu()
     {
@@ -17,13 +18,29 @@ public class Pause : MonoBehaviour
     {
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
+        move.Stop();
     }
 
     public void Resume()
     {
         Time.timeScale = 1.0f;
         pauseMenu.SetActive(false);
+        move.Commence();
     }
 
-  
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            menuActive = !menuActive;
+            if (menuActive == true)
+            {
+                Paused();
+            }
+            if (menuActive == false)
+            {
+                Resume();
+            }
+        }
+    }
 }

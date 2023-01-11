@@ -829,8 +829,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f6cc10e865d7c94ebe6361cf0157dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crimPrefab: {fileID: 6442695329590597413, guid: c2f10b938771b194fa9927e4ac186c74, type: 3}
+  crimPrefab: {fileID: 7568736384815005054, guid: c2f10b938771b194fa9927e4ac186c74, type: 3}
+  watchPrefab: {fileID: 1591216242355497781, guid: 5de2aebc233947e4fb5571baaac57a7f, type: 3}
   isCrimSpawned: 0
+  isWatchSpawned: 0
   waitTime: 10
 --- !u!4 &777874479
 Transform:

@@ -54,6 +54,11 @@ public class TaxiPlayer : MonoBehaviour
             score = score + 1;
             Destroy(collision.gameObject);
         }
+        if(collision.gameObject.tag == ("Watch"))
+        {
+            time += 10;
+            Destroy(collision.gameObject);
+        }
         foreach(GameObject wheel in wheels)
         {
             if(collision.gameObject.tag == ("Ground"))

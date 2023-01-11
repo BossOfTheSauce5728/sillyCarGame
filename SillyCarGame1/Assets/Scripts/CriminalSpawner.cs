@@ -6,8 +6,12 @@ public class CriminalSpawner : MonoBehaviour
 {
 
     [SerializeField] GameObject crimPrefab;
+    [SerializeField] GameObject watchPrefab;
     private GameObject crimInGame;
+    private GameObject watchInGame;
     public bool isCrimSpawned;
+    public bool isWatchSpawned;
+    Vector3 watchSpawn;
     Vector3 crimSpawn;
     public float waitTime = 10;
 
@@ -21,16 +25,19 @@ public class CriminalSpawner : MonoBehaviour
     void Update()
     {
         crimSpawn = new Vector3(Random.Range(-104, 96), 5.1f, Random.Range(-115, -10));
+        watchSpawn = new Vector3(Random.Range(-104, 96), 5.1f, Random.Range(-115, -10));
         IsSpawned();
         SpawnCrim();
+        WatchSpawn();
         crimInGame = GameObject.FindGameObjectWithTag("PickUp");
-        if(isCrimSpawned == true)
+        watchInGame = GameObject.FindGameObjectWithTag("Watch");
+        if(isWatchSpawned == true)
         {
             waitTime -= Time.deltaTime;
         }
         if(waitTime <= 0)
         {
-            Destroy(crimInGame);
+            Destroy(watchInGame);
         }
     }
 
@@ -44,6 +51,14 @@ public class CriminalSpawner : MonoBehaviour
         {
             isCrimSpawned = false;
         }
+        if (watchInGame == true)
+        {
+            isWatchSpawned = true;
+        }
+        else if (watchInGame == false)
+        {
+            isWatchSpawned = false;
+        }
     }
 
     private void SpawnCrim()
@@ -51,6 +66,14 @@ public class CriminalSpawner : MonoBehaviour
         if(isCrimSpawned == false)
         {
             Instantiate(crimPrefab, crimSpawn, Quaternion.identity);
+        }
+    }
+
+    private void WatchSpawn()
+    {
+        if (isWatchSpawned == false)
+        {
+            Instantiate(watchPrefab, watchSpawn, Quaternion.identity);
             waitTime = 10;
         }
     }

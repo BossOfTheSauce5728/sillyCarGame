@@ -9,6 +9,7 @@ public class CriminalSpawner : MonoBehaviour
     private GameObject crimInGame;
     public bool isCrimSpawned;
     Vector3 crimSpawn;
+    public float waitTime = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,14 @@ public class CriminalSpawner : MonoBehaviour
         IsSpawned();
         SpawnCrim();
         crimInGame = GameObject.FindGameObjectWithTag("PickUp");
+        if(isCrimSpawned == true)
+        {
+            waitTime -= Time.deltaTime;
+        }
+        if(waitTime <= 0)
+        {
+            Destroy(crimInGame);
+        }
     }
 
     private void IsSpawned()
@@ -42,6 +51,7 @@ public class CriminalSpawner : MonoBehaviour
         if(isCrimSpawned == false)
         {
             Instantiate(crimPrefab, crimSpawn, Quaternion.identity);
+            waitTime = 10;
         }
     }
 }

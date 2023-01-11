@@ -107,7 +107,6 @@ public class TaxiPlayer : MonoBehaviour
         else if(wheelsOnGround <= 4)
         {
             isOnGround = false;
-            Debug.Log("Reset Car with Space");
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 gameObject.transform.eulerAngles = resetRot;

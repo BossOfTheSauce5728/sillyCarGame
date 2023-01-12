@@ -6,26 +6,27 @@ using UnityEngine.SceneManagement;
 public class Pause : MonoBehaviour
 {
     public GameObject pauseMenu;
-    public Move move;
+    
     public bool menuActive = false;
 
     public void Menu()
     {
         SceneManager.LoadScene("Main Menu");
+        Resume();
     }
 
     public void Paused()
     {
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
-        move.Stop();
+        
     }
 
     public void Resume()
     {
         Time.timeScale = 1.0f;
         pauseMenu.SetActive(false);
-        move.Commence();
+        
     }
 
     void Update()

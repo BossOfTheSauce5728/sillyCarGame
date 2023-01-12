@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.04
+  tony: 1
 --- !u!1 &1436761822122549910
 GameObject:
   m_ObjectHideFlags: 0

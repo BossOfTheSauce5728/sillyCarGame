@@ -20,11 +20,18 @@ public class Move : MonoBehaviour
     {
         transform.Translate(Vector3.back * speed);
 
-        if (Input.GetKeyDown(KeyCode.Escape) & tony == true)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            speed = 0f;
-            Debug.Log(speed);
-            tony = false;
+            tony = !tony;
+                if (tony == false)
+            {
+                Stop();
+            }
+            
+                if (tony == true)
+            {
+                Commence();
+            }
         }
         
         
@@ -36,13 +43,11 @@ public class Move : MonoBehaviour
 
     public void Stop()
     {
-        transform.Translate(Vector3.back * 0);
+        speed = 0f;
     }
 
     public void Commence()
     {
         speed = 0.04f;
-        Debug.Log(speed);
-        tony = true;
     }
 }

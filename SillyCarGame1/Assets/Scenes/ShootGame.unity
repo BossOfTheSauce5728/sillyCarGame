@@ -950,6 +950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 790129216}
+  pitchValue: 1
+  audioSource: {fileID: 963194229}
   menuActive: 0
 --- !u!4 &563395493
 Transform:
@@ -3769,6 +3771,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
+  pitchValue: 1
+  audioSource: {fileID: 0}
   menuActive: 0
 --- !u!114 &1560220341
 MonoBehaviour:

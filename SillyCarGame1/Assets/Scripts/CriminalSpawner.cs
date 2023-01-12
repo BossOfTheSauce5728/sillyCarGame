@@ -12,7 +12,10 @@ public class CriminalSpawner : MonoBehaviour
     public bool isCrimSpawned;
     public bool isWatchSpawned;
     Vector3 watchSpawn;
-    Vector3 crimSpawn;
+    Vector3 crimSpawn1;
+    Vector3 crimSpawn2;
+    Vector3 crimSpawn3;
+    private float spawn;
     public float waitTime = 10;
 
     // Start is called before the first frame update
@@ -24,8 +27,11 @@ public class CriminalSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        crimSpawn = new Vector3(Random.Range(-104, 96), 5.1f, Random.Range(-115, -10));
+        crimSpawn1 = new Vector3(Random.Range(-104, 96), 5.1f, Random.Range(-115, -10));
+        //crimSpawn2 = new Vector3(Random.Range(-104, -95), 5.1f, Random.Range(-115, -10));
+       // crimSpawn3 = new Vector3(Random.Range(-57, -49), 5.1f, Random.Range(-115, -10));
         watchSpawn = new Vector3(Random.Range(-104, 96), 5.1f, Random.Range(-115, -10));
+        //spawn = Random.Range(1, 3);
         IsSpawned();
         SpawnCrim();
         WatchSpawn();
@@ -65,7 +71,7 @@ public class CriminalSpawner : MonoBehaviour
     {
         if(isCrimSpawned == false)
         {
-            Instantiate(crimPrefab, crimSpawn, Quaternion.identity);
+            Instantiate(crimPrefab, crimSpawn1, Quaternion.identity);
         }
     }
 

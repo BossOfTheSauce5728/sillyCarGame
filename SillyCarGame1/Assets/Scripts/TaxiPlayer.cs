@@ -114,6 +114,7 @@ public class TaxiPlayer : MonoBehaviour
             isOnGround = false;
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                gameObject.transform.position = new Vector3(transform.position.x, 6, transform.position.z);
                 gameObject.transform.eulerAngles = resetRot;
             }
         }

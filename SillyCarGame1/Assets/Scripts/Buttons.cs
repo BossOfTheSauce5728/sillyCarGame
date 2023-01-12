@@ -29,7 +29,7 @@ public class Buttons : MonoBehaviour
 
     public void PerilousParking()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("ParkingTutorial");
     }
 
     public void SnaringSUVS()

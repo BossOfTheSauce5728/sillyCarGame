@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CrazyTaxi.unity
     guid: 4ff11b83fd5f1814faa4ca79f96da9d8
+  - enabled: 1
+    path: Assets/Scenes/ParkingGame.unity
+    guid: 3381fd90fa310ea4497c4d4117610e26
+  - enabled: 1
+    path: Assets/Scenes/ParkingTutorial.unity
+    guid: f4955621b2258c54db0f0db0f4d96c27
   m_configObjects: {}

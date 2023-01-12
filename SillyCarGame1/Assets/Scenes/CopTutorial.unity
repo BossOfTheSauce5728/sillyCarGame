@@ -507,8 +507,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Use WASD to control your car.
 
-    Catch criminals highlighted on your
-    minimap, and bring them back to the station
+    Catch criminals highlighted in red
+    on your minimap, and bring them back to the station
+
+
+    Collect clocks to add
+    time to the timer
 
 
     click anywhere to continue'

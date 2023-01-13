@@ -7,6 +7,7 @@ public class Pause : MonoBehaviour
 {
     public GameObject pauseMenu;
     public float pitchValue = 1.0f;
+    public float volumeValue = 1.0f;
     public AudioSource audioSource;
     public bool menuActive = false;
 
@@ -21,6 +22,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
         pitchValue = 0.75f;
+        volumeValue = 0.5f;
     }
 
     public void Resume()
@@ -28,6 +30,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1.0f;
         pauseMenu.SetActive(false);
         pitchValue = 1.0f;
+        volumeValue = 1.0f;
     }
 
     void Update()
@@ -47,8 +50,8 @@ public class Pause : MonoBehaviour
     }
     void OnGUI()
     {
-        pitchValue = pitchValue;
         audioSource.pitch = pitchValue;
+        audioSource.volume = volumeValue;
     }
 
 }

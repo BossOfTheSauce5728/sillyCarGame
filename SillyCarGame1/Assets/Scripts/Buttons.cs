@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
+    public AudioClip Rev;
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -36,4 +39,10 @@ public class Buttons : MonoBehaviour
     {
         SceneManager.LoadScene("CopTutorial");
     }
+
+    public void TheNoise()
+    {
+        audioSource.PlayOneShot(Rev, 1.0f);
+    }
 }
+
